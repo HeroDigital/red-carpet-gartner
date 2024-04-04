@@ -29,10 +29,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: top;
+  justify-content: flex-start;
   position: relative;
   width: 100%;
-  min-height: min(40rem, calc(100svh - var(--nav-height)));
+  height: 420px;
 }
 
 @media (width >= 900px) {

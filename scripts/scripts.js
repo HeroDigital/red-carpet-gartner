@@ -67,6 +67,8 @@ export function decorateMain(main) {
   buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
+
+  document.querySelector('#insights-to-drive-stronger-performance').classList.add('h2')
 }
 
 /**

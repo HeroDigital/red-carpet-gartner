@@ -1,0 +1,25 @@
+.linklist ul {
+  list-style: none;
+  margin-top: 28px;
+  margin-left: 0;
+}
+
+@media (width >= 666px) {
+  .linklist ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+@media (width >= 900px) {
+  .linklist ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+  }
+}
+
+.linklist ul li {
+  margin-bottom: 48px;
+}

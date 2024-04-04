@@ -12,15 +12,15 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: #337ab7;
+  --link-hover-color: #23527c;
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: graphik web, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -42,23 +42,84 @@
 }
 
 @font-face {
-  font-family: roboto-fallback;
-  size-adjust: 100.06%;
-  ascent-override: 95%;
-  src: local('Arial');
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-BoldItalic-Web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-BoldItalic-Web.eot?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-BoldItalic-Web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-BoldItalic-Web.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap
 }
 
-@media (width >= 900px) {
-  :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
-  }
+@font-face {
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Bold-Web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Bold-Web.eot?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Bold-Web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Bold-Web.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap
 }
 
+@font-face {
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibold-web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibold-web.eot?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibold-web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibold-web.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibolditalic-web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibolditalic-web?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibolditalic-web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/graphik-semibolditalic-web.woff) format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-MediumItalic-Web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-MediumItalic-Web.eot?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-MediumItalic-Web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-MediumItalic-Web.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Medium-Web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Medium-Web.eot?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Medium-Web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Medium-Web.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-RegularItalic-Web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-RegularItalic-Web.eot?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-RegularItalic-Web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-RegularItalic-Web.woff) format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: graphik web;
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Regular-Web.eot);
+  src: url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Regular-Web.eot?#iefix) format("embedded-opentype"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Regular-Web.woff2) format("woff2"),url(https://emt.gartnerweb.com/ngw/commonassets/fonts/graphik/Graphik-Regular-Web.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap
+}
 body {
   font-size: var(--body-font-size-m);
   margin: 0;
@@ -78,7 +139,9 @@ header {
 }
 
 h1, h2, h3,
-h4, h5, h6 {
+h4, h5, h6,
+.h1, .h2, .h3,
+.h4, .h5, .h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
   line-height: 1.25;
@@ -93,6 +156,13 @@ h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
+
+.h1 { font-size: var(--heading-font-size-xxl) }
+.h2 { font-size: var(--heading-font-size-xl) }
+.h3 { font-size: var(--heading-font-size-l) }
+.h4 { font-size: var(--heading-font-size-m) }
+.h5 { font-size: var(--heading-font-size-s) }
+.h6 { font-size: var(--heading-font-size-xs) }
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
@@ -187,7 +257,7 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 28px;
+  padding: 64px 48px;
 }
 
 @media (width >= 600px) {
