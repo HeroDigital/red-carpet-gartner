@@ -69,6 +69,7 @@ export function decorateMain(main) {
   decorateBlocks(main);
 
   document.querySelector('#insights-to-drive-stronger-performance').classList.add('h2')
+  document.querySelector('#tools-to-make-smarter-faster-decisions').classList.add('h2')
 }
 
 /**

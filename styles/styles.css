@@ -288,3 +288,17 @@ main .section.highlight {
   white-space: nowrap;
   width: 1px;
 }
+
+.gray-background {
+  background-color: #F4F4F4;
+}
+
+@media (width >= 900px) {
+  .two-column {
+    display: flex;
+  }
+}
+
+.two-column .default-content-wrapper {
+
+}
