@@ -293,6 +293,10 @@ main .section.highlight {
   background-color: #F4F4F4;
 }
 
+.green-background {
+  background-color: #2BCDBC;
+}
+
 @media (width >= 900px) {
   .two-column {
     display: flex;
