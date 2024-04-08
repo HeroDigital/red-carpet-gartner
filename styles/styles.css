@@ -297,6 +297,10 @@ main .section.highlight {
   background-color: #2BCDBC;
 }
 
+.dark-blue-background {
+  background-color: #002856;
+}
+
 @media (width >= 900px) {
   .two-column {
     display: flex;
