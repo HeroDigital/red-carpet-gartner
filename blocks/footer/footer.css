@@ -103,6 +103,7 @@ main .section.top-footer {
 
         div {
           width: calc(50% - 15px);
+          min-width: 153px;
         }
 
         h4 {
