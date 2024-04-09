@@ -3,6 +3,7 @@
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
+  console.log(block)
   function convertMarkup(htmlBlock) {
 
     // Get all the li elements
@@ -29,4 +30,28 @@ export default async function decorate(block) {
     return htmlBlock;
   }
   block = convertMarkup(block)
+
+  if (block.querySelectorAll('li').length === 3) {
+    const wrap = document.createElement('div')
+    wrap.classList.add('two-column-wrap')
+    const section = block.closest('.linklist-container')
+    const defaults = section.querySelector('.default-content-wrapper')
+    const defaulstHtml = section.querySelector('.default-content-wrapper').outerHTML
+    const col = section.querySelector('.linklist-wrapper')
+    const colHtml = section.querySelector('.linklist-wrapper').innerHTML
+    const contentToWrap = `${defaulstHtml}${colHtml}`
+    wrap.innerHTML = contentToWrap
+    section.insertBefore(wrap, defaults)
+
+    section.dataset.sectionStatus = 'loaded'
+    section.removeAttribute('style')
+    defaults.remove()
+    col.remove()
+    // section.classList.remove('loading')
+    // section.classList.remove('loaded')
+    // section.removeAttribute('style')
+    // section.querySelector('.default-content-wrapper:nth-child(2)').innerHTML = ''
+    // section.querySelector('.linklist-wrapper:nth-child(3)').innerHTML = ''
+  }
+
 }

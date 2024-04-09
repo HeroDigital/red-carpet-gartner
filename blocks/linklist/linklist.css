@@ -23,3 +23,21 @@
 .linklist ul li {
   margin-bottom: 48px;
 }
+
+/* two column */
+
+@media (width >= 900px) {
+  .two-column .linklist ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+@media (width >= 900px) {
+  .two-column-wrap {
+    gap: 28px;
+  }
+  .two-column-wrap .default-content-wrapper {
+    flex-basis: fit-content;
+  }
+}

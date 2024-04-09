@@ -302,8 +302,9 @@ main .section.highlight {
 }
 
 @media (width >= 900px) {
-  .two-column {
-    display: flex;
+  .two-column .two-column-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
